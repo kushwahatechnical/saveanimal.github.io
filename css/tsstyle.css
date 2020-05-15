@@ -1,0 +1,390 @@
+
+*{
+	
+	margin: 0;
+	padding: 0;	
+}
+nav{
+	border-top:3px solid #ff3300;
+}
+
+.bg-dark1{
+	background-color: #024846 !important;
+}
+.changebackground{
+	width: 100%;
+	height: 90vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)), url('../img/tiger.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*///////////////////main part//////////////////////////*/
+main{
+	width: 100%;
+	height: 80vh;
+	/*background-color: red;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;text-align: center;
+	color: #fff;
+}
+
+/*background-color: #031206;
+background-image: linear-gradient(180deg, #031206 25%, #08500a 100%);*/
+section h3{
+	font-size: 35px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 2px #b32d00;
+	text-transform: capitalize;
+
+}
+section h1{
+	font-size: 55px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-shadow: 2px 1px 5px #b32d00;
+	margin: 25px 0 15px 0;
+}
+section p{
+	font-size: 25px;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 13px;
+	outline: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+section a:hover{
+	text-decoration: none;
+}
+
+section .btnone{
+	background-color: #fff;
+	color: #000;
+}
+.btnone:hover{
+	background-color:#ff3300; 
+	color: #fff;
+}
+section .btntwo{
+	background-color:#ff3300; 
+	color: #fff;
+}
+.btntwo:hover{
+	background-color: #fff;
+	color: #000;
+}
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #10a769;
+
+}
+
+@keyframes changetext{
+	0%{ content: "Delhi"; }
+	20%{content: "Madhya Pradesh";}
+	35%{content: "Bengal";}
+	60%{content: "Jaipur";}
+	80%{content: "Rajasthan";}
+	100%{content: "Uttarakhand";}
+}
+/*#change_background:after{
+	content: "";
+	animation: changebg 10s infinite linear;
+}
+@keyframes changebg{
+	0%{ content: "background-image:url(../../img/tiger1.jpg);" }
+	20%{ content: "background-image:url(../../img/tiger1.jpg);" }
+	35%{ content: "background-image:url(../../img/tiger1.jpg);" }
+	60%{ content: "background-image:url(../../img/tiger1.jpg);" }
+	80%{ content: "background-image:url(../../img/tiger1.jpg);" }
+	100%{ content: "background-image:url(../../img/tiger1.jpg);" }
+}*/
+button a{
+	text-decoration: none;
+	color: #fff;
+}
+button a:hover{
+	text-decoration: none;
+	color: #fff;
+
+}
+.tr_bg{
+	background-color:#ff3300; 
+}
+button:hover{
+	background-color: #024846;
+}
+
+
+.tr_callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.container-fluid.tr_backgroud{
+	background-color: #024846 !important;
+	height: 60;
+	width: 100%;
+}
+.container-fluid.tr_backgroud_image{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url('../img/wildlife_banner.jpg');
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	opacity: 0.5;	
+}
+.container-fluid.tr_backgroud1{
+	/*background-color: red !important;*/
+	background-image: url('../img/banner4.jpg');
+	height: 60vh;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+} 
+
+ #contact_img{
+	height: 65vh;
+	width: 100%;
+	background-image: url('../img/contact.jpg');
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+}
+#about_img{
+	height: 65vh;
+	width: 100%;
+	background-image: url('../img/about.jpg');
+	background-position: 100% 100%;
+	background-repeat: no-repeat;	
+}
+#Blog_img{
+	height: 65vh;
+	width: 100%;
+	background-image: url('../img/blog.jpg');
+	background-position: 100% 100%;
+	background-repeat: no-repeat;		
+}
+#gl_img{
+	height: 65vh;
+	width: 100%;
+	background-image: url('../img/gallery.jpg');
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+}
+/*///////////////////fa icon///////////////////////////*/
+.tr_fa_icon{
+	height:30vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ol{display: flex;}
+ol li{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	/*background-color: black;*/
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	border: 3px solid #ff3300;
+	position: relative;
+}
+.tr_i{color:#ff471a; font-size: 2rem; }
+
+ol li:before{
+	content: " ";
+	height: inherit;
+	width: inherit;
+	background-color: #ff471a;
+	border-radius: 50%;
+	position: absolute;
+	opacity: 0;
+	transition: all 0.3s linear;
+	z-index: -1;
+}
+ol li:hover:before{
+	transform: scale(0.8);
+	opacity: 1;
+}
+ol li:hover i{color: #fff; font-size: 2rem;}
+ol li:after{
+	content: "";
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border:3px dashed #ff3300;
+	position: absolute;
+	opacity: 0;
+	transition: all 0.3s linear;
+	
+
+}
+ol li:hover:after{
+		animation: rotetes 11s linear;
+		opacity: 1;
+		}
+@keyframes rotetes{
+	0%{transform: scale(0.9) rotate(0deg);}
+	100%{transform: scale(0.9) rotate(360deg);}
+}
+
+.tr_letter_spacing{
+	letter-spacing: 2px;
+}
+/*|||||||||||||||||||||||animation|||||||||||||||||||||||||||||||*/
+
+.about--part1,.about--part2,.part3,.part4,.part5,.part6,
+.section-1,.section-2,.section-3,.section-4,.section-5,.section-6,.section-7,.section-8,
+.card__part1,.card__part2,.card__part3,.gal--animation
+{
+	opacity:0;
+} 
+.about--part1.animated,.about--part2.animated,
+.part3.animated,.part4.animated,.part5.animated,.part6.animated,
+.section-1.animated,.section-2.animated,.section-3.animated,.section-4.animated,.section-5.animated,.section-6.animated,.section-7.animated,.section-8.animated,
+.card__part1.animated,.card__part2.animated,.card__part3.animated,.gal--animation.animated
+{
+	opacity: 1
+}
+
+.gal--part2{
+	animation-delay:0.3s; 
+}
+.gal--part3{
+ 	animation-delay: 0.6s;
+}
+.gal--part4{
+ 	animation-delay: 0.9s;
+}
+.gal--part5{
+ 	animation-delay: 1.2s;
+}
+.gal--part6{
+ 	animation-delay: 1.5s;
+}
+.gal--part7{
+ 	animation-delay: 1.8s;
+}
+.gal--part8{
+ 	animation-delay: 2.1s;
+}
+.gal--part9{
+ 	animation-delay: 2.4s;
+}
+.gal--part10{
+ 	animation-delay: 2.7s;
+}
+.gal--part11{
+ 	animation-delay: 3.0s;
+}
+.gal--part12{
+ 	animation-delay: 3.3s;
+}
+
+/*///////////////////gallery effect////////////////////////////////////*/
+
+.btn-outline-warning{
+	border: 1px solid #ff3300 !important;
+	color: #ff3300;
+	width: 100px;
+
+}
+.btn-outline-warning:hover{
+	background-color: #ff3300 !important;
+	color: #fff;
+	text-align:center;
+	width: 100px;
+}
+/*/////////////////////footer///////////////////////*/
+
+.ft_inst_mr{
+	 padding: 0px;
+	  margin: 0px;
+}
+.ft_span{
+	color: #ff3300;
+	font-size: 1rem;
+
+}
+.ft-text p{
+	padding-top: 2px;
+}
+.ft_text p a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	text-transform: capitalize;
+}
+.ft_text p a:hover{
+	color: #ff3300;
+	text-decoration: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.ft_bt_text p a{
+	color: #fff;
+	text-decoration: none;
+}
+.ft_bt_text p a:hover{
+	color:  #ff3300;
+	text-decoration: none;
+}
+.ft_bt_text p b{
+	color: #fff;
+}
+.ft_color1{
+	background-color: #141313;
+background-image: linear-gradient(180deg, #141313 58%, #0c332b 100%);
+}
+.ft_color{
+	background-color: #000000;
+}
+
+/*//////////////////login page//////////////////////////////*/
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
